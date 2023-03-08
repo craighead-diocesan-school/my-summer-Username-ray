@@ -1,57 +1,86 @@
-<h1>
-    My Summer
-</h1>
-<h2>
-    Summer 2021/22
-</h2>
-<p>
-    I went to Nelson to learn English.
-</p>
-<ul>
-    What I did:
-    <li>Commute to a summer school</li>
-    <li>Go to a beach and swim in the sea</li>
-    <li>eat ice cream everyday</li>
-</ul>
+<body>
+  <header>
+    <h1>My Summer</h1>
+  </header>
+  <main>
+    <h2>Summer 2021/22</h2>
+    <p>I went to Nelson to learn English.</p>
+    <ul>
+      <p>What I did:</p>
+      <li>
+        <p>Commute to a summer school</p>
+      </li>
+      <li>
+        <p>Go to a beach and swim in the sea</p>
+      </li>
+      <li>
+        <p>eat ice cream everyday</p>
+      </li>
+    </ul>
+    <div>
+      <img src="school.jpg" />
+      <img src="sea.jpg" />
+      <img src="ice-cream.jpg" />
+    </div>
+  </main>
+  <footer>
+    <p>&copy; Ray Maeda Craighead 2023</p>
+  </footer>
+</body>
+
 <style>
-    h1 {
+  body {
+    display: grid;
+    grid:
+      " h    h    h  " auto
+      " .    m    .  " auto
+      " .    m    .  " auto
+      " .    f    .  " auto
+      / auto auto auto;
+  }
+
+  header {
+    grid-area: h;
+  }
+  main {
+    grid-area: m;
+  }
+  footer {
+    grid-area: f;
+  }
+  * {
+    font-family: "Courier New", Courier, monospace;
     background-color: ECEBF3;
-    font-family: sans-serif;
-    font-size: 3em;
-    color: 849801;
-    text-shadow: 3px 3px rgb(149, 189, 179);
-  }
-    h2 {
-    background-color: EFF5F4;
-    font-family: sans-serif;
-    font-size: x-large;
     text-align: center;
-    text-shadow: 2px 2px orange;
-    margin-left: 5%;
-    margin-right: 5%;
-    margin-top: 5%;
-    padding-top: 1%;
-    padding-bottom: 1%;
   }
-    p{
-    background-color: aliceblue;
-    font-family: sans-serif;
-    font-size: medium;
-    text-align: center;
-    text-shadow: 1px 1px orange;
-    text-decoration: underline;
-    margin-left: 10%;
-    margin-right: 10%;
-    margin-top: 2%;
-    padding-top: 0.5%;
-    padding-bottom: 0.5%;
-  }
-    ul{
+  h1 {
     background-color: azure;
-    font-family: sans-serif;
-    margin-left: 3%;
-    margin-right: 3%;
+    font-size: 6em;
+    text-shadow: 3px 3px rgb(149, 189, 179);
+    padding: 1%;
+    padding-bottom: 1%;
+    border-radius: 50%;
+  }
+  h2 {
+    background-color: plum;
+    font-size: 3em;
+    text-shadow: 2px 2px palevioletred;
     padding-top: 1%;
     padding-bottom: 1%;
+    border-radius: 50%;
+    filter: grayscale(30%);
+  }
+  p {
+    font-size: 1.5em;
+    text-shadow: 1px 1px palevioletred;
+    padding-top: 1%;
+    padding-bottom: 1%;
+  }
+  img {
+    height: 25rem;
+  }
+  div {
+    display: flex;
+    justify-content: space-around;
   }
 </style>
